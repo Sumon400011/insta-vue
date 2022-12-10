@@ -1,8 +1,8 @@
 <template>
-  <Layout />
+  <RouterView />
 </template>
 
 
 <script setup>
-  import Layout from './views/Layout.vue';
+  import { RouterView } from "vue-router";
 </script>

@@ -4,12 +4,15 @@
             click
         </a-button>
         <a-menu v-model="state.selectedKeys" theme="dark" mode="inline">
-            <a-menu-item key="1">
-                <template #icon>
-                    <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
-                </template>
-                <span class="nav-text">Home</span>
-            </a-menu-item>
+            <RouterLink to="/">
+                <a-menu-item key="1">
+                
+                    <template #icon>
+                        <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+                    </template>
+                    <span class="nav-text">Home</span>
+                </a-menu-item>
+            </RouterLink>
             <a-menu-item key="2">
                 <template #icon>
                     <span class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -34,12 +37,16 @@
                 </template>
                 <span class="nav-text">Notification</span>
             </a-menu-item>
-            <a-menu-item key="6">
-                <template #icon>
-                    <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
-                </template>
-                <span class="nav-text">Profile</span>
-            </a-menu-item>
+            <RouterLink to="/profile">
+                <a-menu-item key="6">
+                    <!-- <RouterLink to="/profile"> -->
+                        <template #icon>
+                            <span class="nav-icon"><i class="fa-solid fa-user"></i></span>
+                        </template>
+                        <span class="nav-text">Profile</span>
+                    <!-- </RouterLink> -->
+                </a-menu-item>
+            </RouterLink>
             <a-menu-item key="7">
                 <template #icon>
                     <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
@@ -58,6 +65,7 @@
 
 <script setup>
     import { reactive } from "vue";
+    import { RouterLink } from "vue-router";
     const state = reactive({
       selectedKeys: ['1'],
     });

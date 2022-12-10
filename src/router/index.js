@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TimelineView from '../views/TimelineView.vue'
+import Layout from '../views/Layout.vue'
 import Settings from "../components/Settings.vue"
+import Profile from "../views/ProfileLayout.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,13 +9,18 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: TimelineView
+      component: Layout
     },
     {
       path: '/settings',
       name: 'Settings',
       component: Settings
     },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile
+    }
   ]
 })
 
