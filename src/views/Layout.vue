@@ -5,6 +5,7 @@
         >
             <Menus />
         </a-layout-sider>
+
         <a-layout :style="{ marginLeft: '200px' }">        
             <a-layout-content :style="{ margin: '24px 16px 0', overflow: 'initial' }">
                 <TimelineView />
@@ -14,7 +15,10 @@
                 Ant Design ©2018 Created by Ant UED
             </a-layout-footer>
         </a-layout>
-      <a-layout-sider>Sider</a-layout-sider>
+
+        <a-layout-sider>
+            Sider
+        </a-layout-sider>
     </a-layout>
   </template>
 
@@ -23,3 +27,9 @@
     import Menus from "../components/menus.vue"
     import TimelineView from "./TimelineView.vue";
 </script>
+
+<style scoped>
+    .ant-layout{
+        min-height: 100vh;
+    }
+</style>
