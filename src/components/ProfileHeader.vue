@@ -1,19 +1,4 @@
 <template>
-    <!-- <div>
-        <a-page-header
-            class="demo-page-header"
-            style="border: 1px solid rgb(235, 237, 240)"
-            :avatar="{ src: 'https://avatars1.githubusercontent.com/u/8186664?s=460&v=4'}"
-        >
-            <template #title>Title</template>
-            <template #subTitle>sub-title</template>
-            <template #extra>
-                <a-button key="3">Operation</a-button>
-                <a-button key="2">Operation</a-button>
-                <a-button key="1" type="primary">Primary</a-button>
-            </template>
-        </a-page-header>
-    </div> -->
     <div class="horizontal-card">
         <div class="avatar">
             <img src="https://avatars1.githubusercontent.com/u/8186664?s=460&v=4" alt="">
