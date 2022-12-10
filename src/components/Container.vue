@@ -5,7 +5,7 @@
 </template>
 <style>
     .container{
-        max-width: 600px;
+        max-width: 470px;
         margin: 0 auto;
     }
 </style>
